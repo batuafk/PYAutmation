@@ -69,3 +69,28 @@
     # Send key in background
     app = connect(file_name, file_path, window_name)
     send_key(app, key)
+
+
+# Proxy
+  ### Tor
+    tor.configure()
+    tor.start()
+    tor.stop()
+
+  ### Set proxies
+      # SOCKS5
+      socks_proxies = {
+        'http': 'socks5://proxy_url:port',
+        'https': 'socks5://proxy_url:port'
+    }
+
+    # HTTP(S)
+    http_proxies = {
+      'https': 'https://proxy_url:port',
+      'http': 'http://proxy_url:port'
+    }
+    
+
+
+# Discord
+    send_message_webhook(url, content, username=None, proxy=None)
