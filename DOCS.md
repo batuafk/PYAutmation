@@ -112,6 +112,7 @@
 
 # General
   Get mac addresses
+  
     mac_addresses = get_mac_addresses()
     wifi_mac =  mac_addresses["Wi-Fi"]
     ethernet_mac = mac_addresses["Ethernet"]
