@@ -63,3 +63,8 @@
 
     Center on screen
     gui.locate_image.center_on_screen(image, confidence=None, region=None, grayscale=False)
+
+
+# BackGUI
+    app = connect(file_name, file_path, window_name)
+    send_key(app, key)
