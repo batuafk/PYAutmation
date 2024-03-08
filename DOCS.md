@@ -1,5 +1,5 @@
-## GUI
-  # GUI.Mouse
+# GUI
+  ## GUI.Mouse
     Get position
     x, y = gui.mouse.get_pos()
 
@@ -26,7 +26,7 @@
     Scroll
     gui.mouse.scroll(num_clicks=1, x=None, y=None, vertical=False)
 
-  # GUI.Keyboard
+  ## GUI.Keyboard
     Write
     gui.keyboard.write(text)
     
@@ -40,7 +40,7 @@
     Hotkey
     gui.keyboard.hotkey(*keys)
 
-  # GUI.MsgBox
+  ## GUI.MsgBox
     Alert
     gui.msgbox.alert(text=None, title=None, button=None)
 
@@ -53,7 +53,7 @@
     Password
     gui.msgbox.password(text=None, title=None, default=None)
 
-  # GUI.LocateImage
+  ## GUI.LocateImage
     On screen
     # grayscale=True speeds up locate functions by 30%, but can cause false matches
     gui.locate_image.on_screen(image, confidence=None, region=None, grayscale=False)
