@@ -222,4 +222,69 @@
   gt_time = game_detail['GTTime']
   ```
 
+  Get server data
+  ```python
+  server_data = growtopia.get_server_data(version=version, protocol=205)
+
+  server = server_data["server"]
+  port = int(server_data["port"])
+  type = int(server_data["type"])
+
+  maint = server_data["#maint"]
+
+  beta_server = server_data["beta_server"]
+  beta_port = int(server_data["beta_port"])
+  beta_type = server_data["beta_type"]
+
+  beta2_server = server_data["beta2_server"]
+  beta2_port = int(server_data["beta2_port"])
+  beta2_type = server_data["beta2_type"]
+
+  beta3_server = server_data["beta3_server"]
+  beta3_port = int(server_data["beta3_port"])
+  beta3_type = server_data["beta3_type"]
+
+  type2 = int(server_data["type2"])
+  meta = server_data["meta"]
+  ```
+
+  Get game information
+  ```python
+  game_info = growtopia.get_game_info()
+
+  game_version = float(game_info['version'])
+  game_installs = game_info['realInstalls']
+  ```
+
+  Get GrowID, encrypted password, last world
+  ```python
+  usr, pass, world = growtopia.get_save()
+  ```
+
+  Connect
+  ```python
+  app = growtopia.connect()
+  ```
+
+  Send key
+  ```python
+  growtopia.send_key(app, key)
+  ```
+
+  Screenshot
+  ```python
+  growtopia.screenshot()
+  ```
+
+  Image to text
+  ```python
+  text = growtopia.image_to_text()
+  ```
+
+  Login
+  ```python
+  app = growtopia.login()
+  ```
+
+
   
