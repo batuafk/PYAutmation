@@ -39,4 +39,27 @@
 
     Hotkey
     gui.keyboard.hotkey(*keys)
-    
+
+  # GUI.MsgBox
+    Alert
+    gui.msgbox.alert(text=None, title=None, button=None)
+
+    Confirm
+    gui.msgbox.confirm(text=None, title=None, *buttons)
+
+    Prompt
+    gui.msgbox.prompt(text=None, title=None, default=None)
+
+    Password
+    gui.msgbox.password(text=None, title=None, default=None)
+
+  # GUI.LocateImage
+    On screen
+    # grayscale=True speeds up locate functions by 30%, but can cause false matches
+    gui.locate_image.on_screen(image, confidence=None, region=None, grayscale=False)
+
+    On all screens
+    gui.locate_image.on_all_screen(image, confidence=None, region=None, grayscale=False)
+
+    Center on screen
+    gui.locate_image.center_on_screen(image, confidence=None, region=None, grayscale=False)
