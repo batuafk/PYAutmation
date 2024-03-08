@@ -66,5 +66,6 @@
 
 
 # BackGUI
+    # Send key in background
     app = connect(file_name, file_path, window_name)
     send_key(app, key)
