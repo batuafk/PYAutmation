@@ -115,18 +115,10 @@
 
 # Proxy
   ### Tor
-  Configure
+  Configure/start/stop
   ```python 
   tor.configure()
-  ```
-
-  Start
-  ```python
   tor.start()
-  ```
-
-  Stop
-  ```python
   tor.stop()
   ```
 
@@ -151,7 +143,7 @@
   }
   ```
 
-    
+
 # Discord
   Send message to webhook
   ```python
@@ -171,4 +163,49 @@
 
   wifi_mac =  mac_addresses["Wi-Fi"]
   ethernet_mac = mac_addresses["Ethernet"]
+  ```
+
+  Is process running
+  ```py
+  running = is_process_running(process_name)
+  ```
+
+  Run process
+  ```python
+  run_process(path)
+  ```
+
+  Terminate process
+  ```python
+  terminate_process(process_name)
+  ```
+
+  Is running as admin
+  ```python
+  admin = is_admin()
+  ```
+
+  Get PID by process name
+  ```python
+  pid = get_pid_by_process_name(process_name)
+  ```
+
+  Screenshot
+  ```python
+  screenshot(file_name, region=None)
+  ```
+
+  Image to text
+  ```python
+  text = image_to_text(image)
+  ```
+
+  Get a windows position
+  ```python
+  get_window_pos(window)
+  ```
+
+  Activate window
+  ```python
+  activate_window(window)
   ```
