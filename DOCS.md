@@ -209,3 +209,17 @@
   ```python
   activate_window(window)
   ```
+
+# Growtopia
+  ``growtopia.path`` ``growtopia.exe_path`` ``growtopia.save_path`` ``growtopia.file_name`` ``growtopia.window_name``
+  
+  Get game detail
+  ```python
+  game_detail = growtopia.get_game_detail()
+
+  online_users = game_detail['Online_User']
+  gt_date = game_detail['GTDate']
+  gt_time = game_detail['GTTime']
+  ```
+
+  
