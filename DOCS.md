@@ -78,10 +78,16 @@
     tor.stop()
 
   ### Set proxies
-      # SOCKS5
-      socks_proxies = {
-        'http': 'socks5://proxy_url:port',
-        'https': 'socks5://proxy_url:port'
+    # TOR
+    tor_proxies = {
+      'http': 'socks5://127.0.0.1:9050',
+      'https': 'socks5://127.0.0.1:9050'
+    }
+    
+    # SOCKS5
+    socks_proxies = {
+      'http': 'socks5://proxy_url:port',
+      'https': 'socks5://proxy_url:port'
     }
 
     # HTTP(S)
