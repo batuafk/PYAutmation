@@ -1,6 +1,6 @@
-# GUI
+## GUI
   # GUI.Mouse
-  - Get position
+    Get position
     x, y = gui.mouse.get_pos()
 
     Set position
