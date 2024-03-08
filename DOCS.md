@@ -73,6 +73,7 @@
 
 # Proxy
   ### Tor
+    configure/start/stop
     tor.configure()
     tor.start()
     tor.stop()
