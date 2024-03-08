@@ -100,12 +100,18 @@
       'https': 'https://proxy_url:port',
       'http': 'http://proxy_url:port'
     }
+
     
-
-
 # Discord
     Send message to webhook
     discord.send_message_webhook(url, content, username=None, proxy=None)
 
     Send message to channel using user token
     send_message_client(token, channel_id, message, proxy=None)
+
+
+# General
+  Get mac addresses
+    mac_addresses = get_mac_addresses()
+    wifi_mac =  mac_addresses["Wi-Fi"]
+    ethernet_mac = mac_addresses["Ethernet"]
