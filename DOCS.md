@@ -104,4 +104,8 @@
 
 
 # Discord
-    send_message_webhook(url, content, username=None, proxy=None)
+    Send message to webhook
+    discord.send_message_webhook(url, content, username=None, proxy=None)
+
+    Send message to channel using user token
+    send_message_client(token, channel_id, message, proxy=None)
