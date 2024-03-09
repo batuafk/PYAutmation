@@ -322,17 +322,19 @@ class growtopia:
             return grow_id, encoded_password, last_world
 
     def connect():
-        if is_process_running("Growtopia.exe") is False:
+        if is_process_running(growtopia.file_name) is False:
             Application().start(growtopia.exe_path)
+        else:
+            print("Growtopia is running")
 
-        app = Application().connect(path=growtopia.exe_path, title="Growtopia")
-        return app.window(title="Growtopia")
+        app = Application().connect(title=growtopia.window_name)
+        return app.window(title=growtopia.window_name)
 
     def send_key(app, key):
         return app.send_keystrokes(key)
 
     def screenshot():
-        object = Screenshot("Growtopia")
+        object = Screenshot(growtopia.window_name)
         screenshot = object.screenshot()
         image = Image.fromarray(screenshot)
         image.save("gt_image.png")
@@ -509,7 +511,7 @@ class back_gui:
         if is_process_running(file_name) is False:
             Application().start(file_path)
 
-        app = Application().connect(path=growtopia.exe_path, title=window_name)
+        app = Application().connect(title=window_name)
         return app.window(title=window_name)
 
     def send_key(app, key):
