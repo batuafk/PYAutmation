@@ -115,11 +115,22 @@
 
 # Proxy
   ### Tor
-  Configure/start/stop
-  ```python 
+  Add 9000-9999 ports
+  ```python
   tor.configure()
+  ```
+
+  start/stop
+  ```python
   tor.start()
   tor.stop()
+  ```
+
+  Use Tor as system-wide proxy
+  If Tor is configured, you can use ports 9000-9999
+  ```python
+  tor.enable_system_wide(port)
+  tor.disable_system_wide()
   ```
 
   ### Set proxies
