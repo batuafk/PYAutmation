@@ -5,4 +5,4 @@
 > Store scripts in the main path.
 
 #
-![image](https://github.com/Bt08s/PYAutmation/assets/68190921/fa2ce8d8-3ea2-417c-a948-b023fd4d7c67)
+![image](https://github.com/Bt08s/PYAutmation/assets/68190921/ce0719ba-283d-4c54-8827-b221ad992510)
