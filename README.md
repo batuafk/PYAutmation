@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Storage scripts in same path
+> Store scripts in same path
