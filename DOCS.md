@@ -164,7 +164,7 @@
 
   Send message to channel using user token
   ```python
-  send_message_client(token, channel_id, message, proxy=None)
+  discord.send_message_client(token, channel_id, message, proxy=None)
   ```
 
 
