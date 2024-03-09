@@ -134,7 +134,7 @@
   tor.disable_system_wide()
   ```
 
-  ### Use tor proxies not system-wide
+  Use tor proxies not system-wide
   ```py
   socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 9050)
   socket.socket = socks.socksocket
@@ -143,7 +143,7 @@
   print(response.text)
   ```
 
-  ### Set proxies
+  Set proxies
   ```python
   # SOCKS5
   socks_proxies = {
