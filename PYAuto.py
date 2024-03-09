@@ -462,12 +462,20 @@ class tor:
 
     def start():
         if os.path.exists("tor\\torrc"):
-            os.system("start tor/tor.exe")
+            os.system("start tor\\tor.exe -f tor\\torrc")
         else:
-            os.system("start tor/tor.exe")
+            os.system("start tor\\tor.exe")
 
     def stop():
         os.system("taskkill /F /IM tor.exe")
+
+    def enable_system_wide(port):
+        os.system('reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f')
+        os.system(f'reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyServer /t REG_SZ /d "socks=127.0.0.1:{port}" /f')
+        os.system('reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyOverride /t REG_SZ /d "<local>" /f')
+
+    def disable_system_wide():
+        os.system('reg add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f')
 
 
 class discord:
