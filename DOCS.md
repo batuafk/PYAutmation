@@ -134,14 +134,17 @@
   tor.disable_system_wide()
   ```
 
+  ### Use tor proxies not system-wide
+  ```py
+  socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", 9050)
+  socket.socket = socks.socksocket
+
+  response = requests.get("https://api.ipify.org")
+  print(response.text)
+  ```
+
   ### Set proxies
   ```python
-  # Tor
-  tor_proxies = {
-    'http': 'socks5://127.0.0.1:9050',
-    'https': 'socks5://127.0.0.1:9050'
-  }
-    
   # SOCKS5
   socks_proxies = {
     'http': 'socks5://proxy_url:port',
