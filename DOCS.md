@@ -281,9 +281,9 @@
   app = growtopia.connect()
   ```
 
-  Send key
+  Send keys
   ```python
-  growtopia.send_key(app, key)
+  growtopia.send_keys(app, key)
   ```
 
   Screenshot
@@ -300,6 +300,3 @@
   ```python
   app = growtopia.login()
   ```
-
-
-  
